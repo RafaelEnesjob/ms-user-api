@@ -1,4 +1,4 @@
-package com.ms.user_api;
+package com.ms.userApi;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
