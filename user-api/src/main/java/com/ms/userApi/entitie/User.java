@@ -16,11 +16,19 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(nullable = false)
     private String nome;
 
+    @Column(nullable = false)
     private String sobreNome;
 
-    private String email;
+    @Column(name = "cpf", nullable = false, length = 11, unique = true)
+    private String cpf;
 
+    @Column(nullable = false, unique = true)
+    private String telefone;
+
+    @Column(nullable = false, unique = true)
+    private String email;
 
 }
